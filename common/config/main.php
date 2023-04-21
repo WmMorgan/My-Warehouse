@@ -11,7 +11,7 @@ return [
         ],
         'authManager' => [
             'class' => 'yii\rbac\PhpManager',
-            'defaultRoles' => ['admin', 'author'], // your define roles
+            'defaultRoles' => ['admin'], // your define roles
         ],
     ],
 ];

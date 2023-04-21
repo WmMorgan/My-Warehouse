@@ -4,8 +4,15 @@ namespace console\controllers;
 use Yii;
 use yii\console\Controller;
 
+/**
+ * Class RbacController
+ * @package console\controllers
+ */
 class RbacController extends Controller
 {
+    /**
+     * @throws \Exception
+     */
     public function actionInit()
     {
         $auth = Yii::$app->authManager;
@@ -17,6 +24,6 @@ class RbacController extends Controller
         $admin->ruleName = $rule->name;
         $auth->add($admin);
 
-        // define 'author' here...
+        // another role here...
     }
 }
