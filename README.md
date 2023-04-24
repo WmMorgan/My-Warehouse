@@ -17,7 +17,8 @@ DIRECTORY STRUCTURE
    - admin account:
         login: admin
         password: admin
-        
+        =====================================
+   - yii migrate     
    - yii datafill/init              Filling in false information for the test.
     
    - https://dbdesigner.page.link/sMWt7NKFoo1RhgHo7
