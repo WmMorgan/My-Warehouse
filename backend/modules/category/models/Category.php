@@ -2,6 +2,7 @@
 
 namespace app\modules\category\models;
 
+use app\modules\product\models\Product;
 use Yii;
 use yii\behaviors\TimestampBehavior;
 use yii\db\Expression;
@@ -33,7 +34,6 @@ class Category extends \yii\db\ActiveRecord
     {
         return [
             [['name'], 'required'],
-            [['created_at', 'updated_at'], 'integer'],
             [['name'], 'string', 'max' => 255],
             [['name'], 'unique'],
         ];
@@ -46,27 +46,15 @@ class Category extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
+            'name' => 'Имя',
+            'created_at' => 'Создан в',
+            'updated_at' => 'Обновлено в',
         ];
     }
 
-  /*  public function beforeSave($insert)
-    {
-        $current_time = time();
-        if ( $this->isNewRecord )
-        {
-            $this->created_at = $current_time;
-            $this->updated_at = $current_time;
-        }
-        if ( ! $this->isNewRecord )
-        {
-            $this->updated_at = $current_time;
-        }
-        return parent::beforeSave($insert);
-    }*/
-
+    /**
+     * @return array[]
+     */
     public function behaviors()
     {
         return [

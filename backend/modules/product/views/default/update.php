@@ -4,13 +4,14 @@ use yii\bootstrap5\Breadcrumbs;
 use yii\helpers\Html;
 
 /** @var yii\web\View $this */
-/** @var app\modules\category\models\Category $model */
+/** @var app\modules\product\models\Product $model */
 
-$this->title = 'Create Category';
-$this->params['breadcrumbs'][] = ['label' => 'Categories', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Update Product: ' . $model->name;
+$this->params['breadcrumbs'][] = ['label' => 'Products', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = 'Update';
 ?>
-<div class="category-create">
+<div class="product-update">
     <?php echo Breadcrumbs::widget([
         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
     ]); ?>

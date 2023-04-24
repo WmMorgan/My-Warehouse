@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65e178f91deb85397ddf0bb16ab682b9",
+    "content-hash": "b0b0bea2dc5730947a5f5d3ac5824d81",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -54,6 +54,27 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/91ef2d8836342875f2519b5815197ea0f23613cf",
                 "reference": "91ef2d8836342875f2519b5815197ea0f23613cf"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/jquery-ui",
+            "version": "1.12.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:components/jqueryui.git",
+                "reference": "44ecf3794cc56b65954cc19737234a3119d036cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/jqueryui/zipball/44ecf3794cc56b65954cc19737234a3119d036cc",
+                "reference": "44ecf3794cc56b65954cc19737234a3119d036cc"
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.6"
             },
             "type": "bower-asset",
             "license": [
@@ -160,6 +181,58 @@
                 "source": "https://github.com/cebe/markdown"
             },
             "time": "2020-02-26T01:55:18+00:00"
+        },
+        {
+            "name": "devanych/yii2-cart",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devanych/yii2-cart.git",
+                "reference": "a17190c8c6552a82aa6f4646b83f8123748fe1a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devanych/yii2-cart/zipball/a17190c8c6552a82aa6f4646b83f8123748fe1a3",
+                "reference": "a17190c8c6552a82aa6f4646b83f8123748fe1a3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6",
+                "yiisoft/yii2": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "default-branch": true,
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "devanych\\cart\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Evgeniy Zyubin",
+                    "email": "info@zyubin.ru",
+                    "homepage": "https://zyubin.ru"
+                }
+            ],
+            "description": "Shopping cart for Yii2",
+            "keywords": [
+                "yii2",
+                "yii2-cart",
+                "yii2-extension",
+                "yii2-shopping-cart"
+            ],
+            "support": {
+                "issues": "https://github.com/devanych/yii2-cart/issues?state=open",
+                "source": "https://github.com/devanych/yii2-cart"
+            },
+            "time": "2019-10-18T10:25:54+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -307,6 +380,42 @@
             "time": "2023-01-14T14:17:03+00:00"
         },
         {
+            "name": "eseperio/yii2-exportable-gridview",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Eseperio/yii2-exportable-gridview.git",
+                "reference": "5ff4c4640d2bc10e19a53bb529d6f966dd23812f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Eseperio/yii2-exportable-gridview/zipball/5ff4c4640d2bc10e19a53bb529d6f966dd23812f",
+                "reference": "5ff4c4640d2bc10e19a53bb529d6f966dd23812f",
+                "shasum": ""
+            },
+            "require": {
+                "phpoffice/phpspreadsheet": "^1.1",
+                "yiisoft/yii2": "~2.0.12"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "eseperio\\gridview\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Yii2 gridview with full export of data to spreadsheet.",
+            "support": {
+                "issues": "https://github.com/Eseperio/yii2-exportable-gridview/issues",
+                "source": "https://github.com/Eseperio/yii2-exportable-gridview/tree/0.1.2"
+            },
+            "time": "2019-11-28T09:55:36+00:00"
+        },
+        {
             "name": "ezyang/htmlpurifier",
             "version": "v4.16.0",
             "source": {
@@ -368,6 +477,379 @@
             "time": "2022-09-18T07:06:19+00:00"
         },
         {
+            "name": "kartik-v/yii2-krajee-base",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-krajee-base.git",
+                "reference": "5c095126d1be47e0bb1f92779b7dc099f6feae31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/5c095126d1be47e0bb1f92779b7dc099f6feae31",
+                "reference": "5c095126d1be47e0bb1f92779b7dc099f6feae31",
+                "shasum": ""
+            },
+            "suggest": {
+                "yiisoft/yii2-bootstrap": "for Krajee extensions to work with Bootstrap 3.x version",
+                "yiisoft/yii2-bootstrap4": "for Krajee extensions to work with Bootstrap 4.x version",
+                "yiisoft/yii2-bootstrap5": "for Krajee extensions to work with Bootstrap 5.x version"
+            },
+            "default-branch": true,
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kartik\\base\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Base library and foundation components for all Yii2 Krajee extensions.",
+            "homepage": "https://github.com/kartik-v/yii2-krajee-base",
+            "keywords": [
+                "base",
+                "extension",
+                "foundation",
+                "krajee",
+                "widget",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/kartik-v/yii2-krajee-base/issues",
+                "source": "https://github.com/kartik-v/yii2-krajee-base/tree/v3.0.5"
+            },
+            "time": "2022-06-01T14:05:39+00:00"
+        },
+        {
+            "name": "kartik-v/yii2-widget-select2",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-widget-select2.git",
+                "reference": "f554b1c5cadb36f00949a9df7aa79395754cb667"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/f554b1c5cadb36f00949a9df7aa79395754cb667",
+                "reference": "f554b1c5cadb36f00949a9df7aa79395754cb667",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": ">=3.0.4",
+                "select2/select2": ">=4.0"
+            },
+            "default-branch": true,
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kartik\\select2\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Enhanced Yii2 wrapper for the Select2 jQuery plugin (sub repo split from yii2-widgets).",
+            "homepage": "https://github.com/kartik-v/yii2-widget-select2",
+            "keywords": [
+                "dropdown",
+                "extension",
+                "form",
+                "jquery",
+                "plugin",
+                "select2",
+                "widget",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/kartik-v/yii2-widget-select2/issues",
+                "source": "https://github.com/kartik-v/yii2-widget-select2/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/yii2-widget-select2",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2023-03-30T13:17:08+00:00"
+        },
+        {
+            "name": "maennchen/zipstream-php",
+            "version": "v2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maennchen/ZipStream-PHP.git",
+                "reference": "620c2aab9d4f109aef4949049cc909c24479f8e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/620c2aab9d4f109aef4949049cc909c24479f8e0",
+                "reference": "620c2aab9d4f109aef4949049cc909c24479f8e0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "myclabs/php-enum": "^1.5",
+                "php": "^8.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.9",
+                "guzzlehttp/guzzle": "^6.5.3 || ^7.2.0",
+                "mikey179/vfsstream": "^1.6",
+                "php-coveralls/php-coveralls": "^2.4",
+                "phpunit/phpunit": "^8.5.8 || ^9.4.2",
+                "vimeo/psalm": "^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ZipStream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Duncan",
+                    "email": "pabs@pablotron.org"
+                },
+                {
+                    "name": "Jonatan Männchen",
+                    "email": "jonatan@maennchen.ch"
+                },
+                {
+                    "name": "Jesse Donat",
+                    "email": "donatj@gmail.com"
+                },
+                {
+                    "name": "András Kolesár",
+                    "email": "kolesar@kolesar.hu"
+                }
+            ],
+            "description": "ZipStream is a library for dynamically streaming dynamic zip files from PHP without writing to the disk at all on the server.",
+            "keywords": [
+                "stream",
+                "zip"
+            ],
+            "support": {
+                "issues": "https://github.com/maennchen/ZipStream-PHP/issues",
+                "source": "https://github.com/maennchen/ZipStream-PHP/tree/v2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/maennchen",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/zipstream",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2023-04-19T20:02:44+00:00"
+        },
+        {
+            "name": "markbaker/complex",
+            "version": "3.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MarkBaker/PHPComplex.git",
+                "reference": "95c56caa1cf5c766ad6d65b6344b807c1e8405b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MarkBaker/PHPComplex/zipball/95c56caa1cf5c766ad6d65b6344b807c1e8405b9",
+                "reference": "95c56caa1cf5c766ad6d65b6344b807c1e8405b9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Complex\\": "classes/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker",
+                    "email": "mark@lange.demon.co.uk"
+                }
+            ],
+            "description": "PHP Class for working with complex numbers",
+            "homepage": "https://github.com/MarkBaker/PHPComplex",
+            "keywords": [
+                "complex",
+                "mathematics"
+            ],
+            "support": {
+                "issues": "https://github.com/MarkBaker/PHPComplex/issues",
+                "source": "https://github.com/MarkBaker/PHPComplex/tree/3.0.2"
+            },
+            "time": "2022-12-06T16:21:08+00:00"
+        },
+        {
+            "name": "markbaker/matrix",
+            "version": "3.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MarkBaker/PHPMatrix.git",
+                "reference": "728434227fe21be27ff6d86621a1b13107a2562c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MarkBaker/PHPMatrix/zipball/728434227fe21be27ff6d86621a1b13107a2562c",
+                "reference": "728434227fe21be27ff6d86621a1b13107a2562c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phploc/phploc": "^4.0",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
+                "sebastian/phpcpd": "^4.0",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Matrix\\": "classes/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker",
+                    "email": "mark@demon-angel.eu"
+                }
+            ],
+            "description": "PHP Class for working with matrices",
+            "homepage": "https://github.com/MarkBaker/PHPMatrix",
+            "keywords": [
+                "mathematics",
+                "matrix",
+                "vector"
+            ],
+            "support": {
+                "issues": "https://github.com/MarkBaker/PHPMatrix/issues",
+                "source": "https://github.com/MarkBaker/PHPMatrix/tree/3.0.1"
+            },
+            "time": "2022-12-02T22:17:43+00:00"
+        },
+        {
+            "name": "myclabs/php-enum",
+            "version": "1.8.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/myclabs/php-enum.git",
+                "reference": "a867478eae49c9f59ece437ae7f9506bfaa27483"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/a867478eae49c9f59ece437ae7f9506bfaa27483",
+                "reference": "a867478eae49c9f59ece437ae7f9506bfaa27483",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "1.*",
+                "vimeo/psalm": "^4.6.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MyCLabs\\Enum\\": "src/"
+                },
+                "classmap": [
+                    "stubs/Stringable.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP Enum contributors",
+                    "homepage": "https://github.com/myclabs/php-enum/graphs/contributors"
+                }
+            ],
+            "description": "PHP Enum implementation",
+            "homepage": "http://github.com/myclabs/php-enum",
+            "keywords": [
+                "enum"
+            ],
+            "support": {
+                "issues": "https://github.com/myclabs/php-enum/issues",
+                "source": "https://github.com/myclabs/php-enum/tree/1.8.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/mnapoli",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/myclabs/php-enum",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-08-04T09:53:51+00:00"
+        },
+        {
             "name": "paragonie/random_compat",
             "version": "dev-master",
             "source": {
@@ -421,6 +903,111 @@
                 "source": "https://github.com/paragonie/random_compat"
             },
             "time": "2022-06-19T18:08:39+00:00"
+        },
+        {
+            "name": "phpoffice/phpspreadsheet",
+            "version": "1.28.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
+                "reference": "6e81cf39bbd93ebc3a4e8150444c41e8aa9b769a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/6e81cf39bbd93ebc3a4e8150444c41e8aa9b769a",
+                "reference": "6e81cf39bbd93ebc3a4e8150444c41e8aa9b769a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
+                "ext-fileinfo": "*",
+                "ext-gd": "*",
+                "ext-iconv": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
+                "ext-xml": "*",
+                "ext-xmlreader": "*",
+                "ext-xmlwriter": "*",
+                "ext-zip": "*",
+                "ext-zlib": "*",
+                "ezyang/htmlpurifier": "^4.15",
+                "maennchen/zipstream-php": "^2.1",
+                "markbaker/complex": "^3.0",
+                "markbaker/matrix": "^3.0",
+                "php": "^7.4 || ^8.0",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/simple-cache": "^1.0 || ^2.0 || ^3.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-main",
+                "dompdf/dompdf": "^1.0 || ^2.0",
+                "friendsofphp/php-cs-fixer": "^3.2",
+                "mitoteam/jpgraph": "^10.2.4",
+                "mpdf/mpdf": "^8.1.1",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpstan/phpstan": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^8.5 || ^9.0",
+                "squizlabs/php_codesniffer": "^3.7",
+                "tecnickcom/tcpdf": "^6.5"
+            },
+            "suggest": {
+                "dompdf/dompdf": "Option for rendering PDF with PDF Writer",
+                "ext-intl": "PHP Internationalization Functions",
+                "mitoteam/jpgraph": "Option for rendering charts, or including charts with PDF or HTML Writers",
+                "mpdf/mpdf": "Option for rendering PDF with PDF Writer",
+                "tecnickcom/tcpdf": "Option for rendering PDF with PDF Writer"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpOffice\\PhpSpreadsheet\\": "src/PhpSpreadsheet"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maarten Balliauw",
+                    "homepage": "https://blog.maartenballiauw.be"
+                },
+                {
+                    "name": "Mark Baker",
+                    "homepage": "https://markbakeruk.net"
+                },
+                {
+                    "name": "Franck Lefevre",
+                    "homepage": "https://rootslabs.net"
+                },
+                {
+                    "name": "Erik Tilt"
+                },
+                {
+                    "name": "Adrien Crivelli"
+                }
+            ],
+            "description": "PHPSpreadsheet - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+            "homepage": "https://github.com/PHPOffice/PhpSpreadsheet",
+            "keywords": [
+                "OpenXML",
+                "excel",
+                "gnumeric",
+                "ods",
+                "php",
+                "spreadsheet",
+                "xls",
+                "xlsx"
+            ],
+            "support": {
+                "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.28.0"
+            },
+            "time": "2023-02-25T12:24:49+00:00"
         },
         {
             "name": "psr/container",
@@ -530,6 +1117,168 @@
             "time": "2022-06-29T17:22:39+00:00"
         },
         {
+            "name": "psr/http-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-client.git",
+                "reference": "0955afe48220520692d2d09f7ab7e0f93ffd6a31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/0955afe48220520692d2d09f7ab7e0f93ffd6a31",
+                "reference": "0955afe48220520692d2d09f7ab7e0f93ffd6a31",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "psr/http-message": "^1.0 || ^2.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP clients",
+            "homepage": "https://github.com/php-fig/http-client",
+            "keywords": [
+                "http",
+                "http-client",
+                "psr",
+                "psr-18"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-client/tree/1.0.2"
+            },
+            "time": "2023-04-10T20:12:12+00:00"
+        },
+        {
+            "name": "psr/http-factory",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "5a4f141ac2e5bc35e615134f127e1833158d2944"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/5a4f141ac2e5bc35e615134f127e1833158d2944",
+                "reference": "5a4f141ac2e5bc35e615134f127e1833158d2944",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-factory/tree/master"
+            },
+            "time": "2022-07-14T07:21:53+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/1.1"
+            },
+            "time": "2023-04-04T09:50:52+00:00"
+        },
+        {
             "name": "psr/log",
             "version": "dev-master",
             "source": {
@@ -579,6 +1328,111 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
             "time": "2021-07-14T16:46:02+00:00"
+        },
+        {
+            "name": "psr/simple-cache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "2d280c2aaa23a120f35d55cfde8581954a8e77fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/2d280c2aaa23a120f35d55cfde8581954a8e77fa",
+                "reference": "2d280c2aaa23a120f35d55cfde8581954a8e77fa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\SimpleCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for simple caching",
+            "keywords": [
+                "cache",
+                "caching",
+                "psr",
+                "psr-16",
+                "simple-cache"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/simple-cache/tree/master"
+            },
+            "time": "2022-04-08T16:41:45+00:00"
+        },
+        {
+            "name": "select2/select2",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/select2/select2.git",
+                "reference": "4de1d236e602149a5c78d35899b49b3989b94107"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/select2/select2/zipball/4de1d236e602149a5c78d35899b49b3989b94107",
+                "reference": "4de1d236e602149a5c78d35899b49b3989b94107",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "dist/js/select2.js"
+                    ],
+                    "styles": [
+                        "dist/css/select2.css"
+                    ],
+                    "files": [
+                        "dist/js/select2.js",
+                        "dist/js/i18n/*.js",
+                        "dist/css/select2.css"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Select2 is a jQuery based replacement for select boxes.",
+            "homepage": "https://select2.org/",
+            "support": {
+                "issues": "https://github.com/select2/select2/issues",
+                "source": "https://github.com/select2/select2/tree/develop"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/kevin-brown",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/select2",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2023-03-10T02:35:43+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -1608,6 +2462,100 @@
                 }
             ],
             "time": "2023-03-03T17:51:29+00:00"
+        },
+        {
+            "name": "yiisoft/yii2-jui",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-jui.git",
+                "reference": "4e65aca79a0383e49698616f4aca59254f9eae59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/4e65aca79a0383e49698616f4aca59254f9eae59",
+                "reference": "4e65aca79a0383e49698616f4aca59254f9eae59",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery-ui": "~1.12.1",
+                "yiisoft/yii2": "~2.0.4"
+            },
+            "require-dev": {
+                "cweagans/composer-patches": "^1.7",
+                "phpunit/phpunit": "4.8.34"
+            },
+            "default-branch": true,
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                },
+                "composer-exit-on-patch-failure": true,
+                "patches": {
+                    "phpunit/phpunit-mock-objects": {
+                        "Fix PHP 7 and 8 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_mock_objects.patch"
+                    },
+                    "phpunit/phpunit": {
+                        "Fix PHP 7 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php7.patch",
+                        "Fix PHP 8 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php8.patch"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\jui\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Qiang Xue",
+                    "email": "qiang.xue@gmail.com"
+                },
+                {
+                    "name": "Alexander Kochetov",
+                    "email": "creocoder@gmail.com"
+                },
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc"
+                },
+                {
+                    "name": "Alexander Makarov",
+                    "email": "sam@rmcreative.ru"
+                }
+            ],
+            "description": "The Jquery UI extension for the Yii framework",
+            "keywords": [
+                "jQuery UI",
+                "yii2"
+            ],
+            "support": {
+                "forum": "http://www.yiiframework.com/forum/",
+                "irc": "irc://irc.freenode.net/yii",
+                "issues": "https://github.com/yiisoft/yii2-jui/issues",
+                "source": "https://github.com/yiisoft/yii2-jui",
+                "wiki": "http://www.yiiframework.com/wiki/"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/yiisoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/yiisoft",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/yiisoft/yii2-jui",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-10-20T07:33:11+00:00"
         },
         {
             "name": "yiisoft/yii2-symfonymailer",
@@ -3318,115 +4266,6 @@
                 }
             ],
             "time": "2023-01-14T12:32:24+00:00"
-        },
-        {
-            "name": "psr/http-factory",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/http-factory.git",
-                "reference": "5a4f141ac2e5bc35e615134f127e1833158d2944"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/5a4f141ac2e5bc35e615134f127e1833158d2944",
-                "reference": "5a4f141ac2e5bc35e615134f127e1833158d2944",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0.0",
-                "psr/http-message": "^1.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Http\\Message\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interfaces for PSR-7 HTTP message factories",
-            "keywords": [
-                "factory",
-                "http",
-                "message",
-                "psr",
-                "psr-17",
-                "psr-7",
-                "request",
-                "response"
-            ],
-            "support": {
-                "source": "https://github.com/php-fig/http-factory/tree/master"
-            },
-            "time": "2022-07-14T07:21:53+00:00"
-        },
-        {
-            "name": "psr/http-message",
-            "version": "1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/http-message.git",
-                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
-                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2 || ^8.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Http\\Message\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for HTTP messages",
-            "homepage": "https://github.com/php-fig/http-message",
-            "keywords": [
-                "http",
-                "http-message",
-                "psr",
-                "psr-7",
-                "request",
-                "response"
-            ],
-            "support": {
-                "source": "https://github.com/php-fig/http-message/tree/1.1"
-            },
-            "time": "2023-04-04T09:50:52+00:00"
         },
         {
             "name": "psy/psysh",
@@ -5669,7 +6508,11 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "kartik-v/yii2-widget-select2": 20,
+        "eseperio/yii2-exportable-gridview": 20,
+        "yiisoft/yii2-faker": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

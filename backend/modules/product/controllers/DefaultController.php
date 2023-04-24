@@ -1,15 +1,15 @@
 <?php
 
-namespace app\modules\category\controllers;
+namespace app\modules\product\controllers;
 
-use app\modules\category\models\Category;
-use app\modules\category\models\CategorySearch;
+use app\modules\product\models\Product;
+use app\modules\product\models\ProductSearch;
 use backend\controllers\BaseController;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * CategoryController implements the CRUD actions for Category model.
+ * DefaultController implements the CRUD actions for Product model.
  */
 class DefaultController extends BaseController
 {
@@ -32,13 +32,13 @@ class DefaultController extends BaseController
     }
 
     /**
-     * Lists all Category models.
+     * Lists all Product models.
      *
      * @return string
      */
     public function actionIndex()
     {
-        $searchModel = new CategorySearch();
+        $searchModel = new ProductSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
         return $this->render('index', [
@@ -48,7 +48,7 @@ class DefaultController extends BaseController
     }
 
     /**
-     * Displays a single Category model.
+     * Displays a single Product model.
      * @param int $id ID
      * @return string
      * @throws NotFoundHttpException if the model cannot be found
@@ -61,21 +61,21 @@ class DefaultController extends BaseController
     }
 
     /**
-     * Creates a new Category model.
+     * Creates a new Product model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
     public function actionCreate()
     {
-        $model = new Category();
+        $model = new Product();
 
-            if ($this->request->isPost) {
-                if ($model->load($this->request->post()) && $model->save()) {
-                    return $this->redirect(['view', 'id' => $model->id]);
-                }
-            } else {
-                $model->loadDefaultValues();
+        if ($this->request->isPost) {
+            if ($model->load($this->request->post()) && $model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
             }
+        } else {
+            $model->loadDefaultValues();
+        }
 
         return $this->render('create', [
             'model' => $model,
@@ -83,7 +83,7 @@ class DefaultController extends BaseController
     }
 
     /**
-     * Updates an existing Category model.
+     * Updates an existing Product model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param int $id ID
      * @return string|\yii\web\Response
@@ -103,7 +103,7 @@ class DefaultController extends BaseController
     }
 
     /**
-     * Deletes an existing Category model.
+     * Deletes an existing Product model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param int $id ID
      * @return \yii\web\Response
@@ -117,15 +117,15 @@ class DefaultController extends BaseController
     }
 
     /**
-     * Finds the Category model based on its primary key value.
+     * Finds the Product model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param int $id ID
-     * @return Category the loaded model
+     * @return Product the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Category::findOne(['id' => $id])) !== null) {
+        if (($model = Product::findOne(['id' => $id])) !== null) {
             return $model;
         }
 

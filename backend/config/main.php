@@ -15,6 +15,12 @@ return [
         'category' => [
             'class' => 'app\modules\category\CategoryModule',
         ],
+        'product' => [
+            'class' => 'app\modules\product\ProductModule',
+        ],
+        'order' => [
+            'class' => 'app\modules\order\OrderModule',
+        ],
     ],
     'components' => [
         'request' => [
@@ -47,6 +53,19 @@ return [
             'showScriptName' => false,
             'rules' => [
 //                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+            ],
+        ],
+
+        'cart' => [
+            'class' => 'devanych\cart\Cart',
+            'storageClass' => 'devanych\cart\storage\SessionStorage',
+            'calculatorClass' => 'devanych\cart\calculators\SimpleCalculator',
+            'params' => [
+                'key' => 'cart',
+                'expire' => 604800,
+                'productClass' => 'app\modules\product\models\Product',
+                'productFieldId' => 'id',
+                'productFieldPrice' => 'sale_price',
             ],
         ],
 

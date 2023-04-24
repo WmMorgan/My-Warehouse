@@ -5,14 +5,14 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /** @var yii\web\View $this */
-/** @var app\modules\category\models\Category $model */
+/** @var app\modules\product\models\Product $model */
 
 $this->title = $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Categories', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Products', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
-<div class="category-view">
+<div class="product-view">
     <?php echo Breadcrumbs::widget([
         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
     ]); ?>
@@ -33,7 +33,14 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
+            'category_id',
             'name',
+            'description:ntext',
+            'price',
+            'sale_price',
+            'quantity',
+            'measure',
+            'discount',
             'created_at',
             'updated_at',
         ],

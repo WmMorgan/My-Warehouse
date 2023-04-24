@@ -22,7 +22,7 @@ CREATE TABLE `product` (
 	`sale_price` INT NOT NULL,
 	`quantity` INT NOT NULL,
 	`measure` VARCHAR(10) NOT NULL,
-	`discount` INT NOT NULL,
+	`discount` INT NOT NULL DEFAULT '0',
     `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     `updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 	PRIMARY KEY (`id`)
