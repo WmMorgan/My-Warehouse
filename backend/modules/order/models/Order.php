@@ -87,7 +87,7 @@ class Order extends \yii\db\ActiveRecord
        foreach ($tell as $_amount) {
            $product = unserialize($_amount->products);
            foreach ($product as $price) {
-               $amount[] = $price['price'];
+               $amount[] = $price['price'] * $price['quantity'];
            }
        }
        return array_sum($amount);
