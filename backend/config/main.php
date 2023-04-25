@@ -65,7 +65,7 @@ return [
                 'expire' => 604800,
                 'productClass' => 'app\modules\product\models\Product',
                 'productFieldId' => 'id',
-                'productFieldPrice' => 'sale_price',
+                'productFieldPrice' => 'new_sale_price',
             ],
         ],
 

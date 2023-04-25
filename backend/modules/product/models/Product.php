@@ -27,6 +27,15 @@ use yii\web\NotFoundHttpException;
  */
 class Product extends \yii\db\ActiveRecord
 {
+    public $new_sale_price;
+
+
+    public function afterFind()
+    {
+        $this->getDiscountPrice();
+        parent::afterFind();
+    }
+
     /**
      * {@inheritdoc}
      */
@@ -112,12 +121,16 @@ class Product extends \yii\db\ActiveRecord
             throw new NotFoundHttpException();
     }
 
+
     /**
      * @return float|int
      */
     public function getDiscountPrice() {
         $sale = $this->sale_price * $this->discount / 100;
-        return $this->sale_price - $sale;
+        // new sale price
+        $this->new_sale_price = $this->sale_price - $sale;
+
+        return $this->new_sale_price;
     }
 
     /**
@@ -126,7 +139,7 @@ class Product extends \yii\db\ActiveRecord
     public function getSalePrice() {
         ob_start();
         if ($this->discount) {
-            echo '<b style="color:#d00f0f">' . $this->getDiscountPrice() . '</b> (<s>' . $this->sale_price . '</s>)';
+            echo '<b style="color:#d00f0f">' . $this->new_sale_price . '</b> (<s>' . $this->sale_price . '</s>)';
         } else {
             echo $this->sale_price;
         }
